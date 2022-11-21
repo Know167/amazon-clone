@@ -11,10 +11,18 @@ function App() {
             <div className="app">
             <Header/>
                 <Routes>
+                    {/* Login Route */}
+                    <Route path='/login' element={
+                    <h1>
+                    Welcome To The Login Page
+                      </h1>
+                    }/>
+                    {/* Checkout Route */}
                     <Route path='/checkout' element={<>
                       <Checkout/>
                       </>
                     }/>
+                    
                     {/* Home Route */}
                     <Route exact path="/" element={<Home/>}/>
                 </Routes>

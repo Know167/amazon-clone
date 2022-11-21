@@ -12,14 +12,16 @@ function Home() {
             <div className="home__row">
                 {/* product */}
                 <Product 
-                title='omae wa mou shindeiru'
+                id={1}
+                title='Omae ma e wa mou, Shindeiru!!'
                 price={1299}
                 image="https://images-eu.ssl-images-amazon.com/images/I/91FvDEE9sCL._AC_UL450_SR450,320_.jpg"
                 rating={4}
                 />
                 {/* product */}
                 <Product
-                title='blaster'
+                id={2}
+                title='Blaster'
                 price={1149}
                 image="https://images-eu.ssl-images-amazon.com/images/I/71MNVwWhkaL._AC_UL450_SR450,320_.jpg"
                 rating={4}
@@ -28,20 +30,23 @@ function Home() {
             <div className="home__row">
                 {/* product */}
                 <Product
-                title='leanstop'
+                id={3}
+                title='LeanStop'
                 price={2099}
                 image="https://images-eu.ssl-images-amazon.com/images/I/61Q-Mj7u7iL._AC_UL450_SR450,320_.jpg"
                 rating={4}
                 />
                 {/* product */}
                 <Product
-                title='wadduheck'
+                id={4}
+                title='WadduHeck'
                 price={700}
                 image="https://images-eu.ssl-images-amazon.com/images/I/61ZvXHcRrrL._AC_UL450_SR450,320_.jpg"
                 rating={3}
                 />
                 {/* product */}
-                <Product 
+                <Product
+                id={5} 
                 title='Justin'
                 price={329}
                 image="https://images-eu.ssl-images-amazon.com/images/I/61Ih+ry88oL._AC_UL450_SR450,320_.jpg"
@@ -51,7 +56,8 @@ function Home() {
             <div className="home__row">
                 {/* product */}
                 <Product
-                title='fuckubitch'
+                id={6}
+                title='Lovin it'
                 price={14999}
                 image="https://m.media-amazon.com/images/I/71L-lTQnJiL._AC_UY218_.jpg"
                 rating={4}

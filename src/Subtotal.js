@@ -1,23 +1,32 @@
 import React from 'react'
 import "./Subtotal.css"
-import curfor from "react-currency-format"
+import CurrencyFormat from 'react-currency-format'
+import { useStateValue } from './StateProvider'
+import { getBasketTotal } from './reducer'
 
 function Subtotal() {
+
+  const [{basket}, dispatch] = useStateValue();
+
   return (
     <div className='subtotal'>
-        <curfor>
+        <CurrencyFormat
             renderText={(value)=>(
                 <>
-                <p>Subtotal (0 items): <strong>0</strong></p>
-                <small className="subtotal_gift"><input type="checkbox" />This order contains a gift</small>
+                <p>Subtotal ({basket?.length} items): <strong>{value}</strong></p>
+                <small className="subtotal_gift"><input type="checkbox" /> This order contains a gift</small>
                 </>
             )}
             decimalScale={2}
-            value={0}
+            value={getBasketTotal(basket)}
             displayType={"text"}
             thousandSeparator={true}
-            prefix={"$"}
-        </curfor>
+            prefix={"Rs. "}
+        />
+        <button>Proceed to Buy</button>
+            <div className='emi_available'>
+              EMI available on one of your order
+              </div>
     </div>
   )
 }

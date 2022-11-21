@@ -16,6 +16,10 @@
     display: flex;
 }
 
+.product__title{
+    font-weight: 500;
+}
+
 .product__info{
 
     height: 100px;
@@ -40,3 +44,6 @@
     margin-bottom: 15px;
 }
 
+small{
+    font-weight: 600;
+}
